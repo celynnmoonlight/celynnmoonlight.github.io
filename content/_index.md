@@ -35,14 +35,16 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '📚 My Research & Mission'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        My research and entrepreneurial efforts focus on bridging the gap between scientific discovery and commercial AI software applications. With a foundation in chemistry and materials science, I work to translate scientific methodologies into innovative digital products.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        As a PhD candidate at ShanghaiTech University (jointly trained with the Shanghai Institute of Technical Physics, Chinese Academy of Sciences - SITP CAS), under the supervision of Prof. Wei Lu, my research centers on infrared physics, condensed matter physics, and micro-nano optical devices.
 
-        Please reach out to collaborate 😃
+        At Shanghai Sunrise Chime Tech, I lead product positioning, brand promotion, and user growth strategy for our AI-driven application, **FlagSay**. I am passionate about utilizing advanced data analysis and optoelectronic technologies to unlock new possibilities.
+
+        Please feel free to reach out for research collaborations or product insights!
     design:
       columns: '1'
   - block: collection
