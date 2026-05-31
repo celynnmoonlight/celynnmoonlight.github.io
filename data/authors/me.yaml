@@ -1,0 +1,22 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Celynn Moonlight
+  given: Celynn
+  family: Moonlight
+  pronouns: she/her
+status:
+  icon: "✨"
+role: Tech Co-Founder
+bio: |
+  Celynn Moonlight is a co-founder of Shanghai Sunrise Chime Technology Co., Ltd. She leads market positioning, brand strategy, and user growth for the company's AI product FlagSay.
+affiliations:
+  - name: Shanghai Sunrise Chime Technology Co., Ltd.
+    url: "https://www.sihuangtech.cn"
+experience:
+  - role: Co-Founder & Head of Marketing
+    org: Shanghai Sunrise Chime Technology Co., Ltd.
+    start: 2026-01-01
+    summary: |
+      Lead market positioning, brand promotion, and user growth strategy for FlagSay, driving commercialization and aligning the product with user demands.
