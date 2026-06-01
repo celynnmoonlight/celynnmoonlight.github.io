@@ -19,7 +19,7 @@ affiliations:
   - name: ShanghaiTech University
     url: https://www.shanghaitech.edu.cn/
   - name: Shanghai Institute of Technical Physics, CAS
-    url: http://www.sitp.ac.cn/
+    url: https://www.sitp.ac.cn/
   - name: Shanghai Sunrise Chime Technology Co., Ltd.
     url: "https://www.sihuangtech.cn"
 
@@ -67,7 +67,7 @@ education:
 experience:
   - role: Co-Founder & Head of Marketing
     org: Shanghai Sunrise Chime Technology Co., Ltd.
-    start: 2024-01-01
+    start: 2026-01-01
     summary: |
       Lead market positioning, brand promotion, and user growth strategy for FlagSay, driving commercialization and aligning AI technical capabilities with user demands.
 

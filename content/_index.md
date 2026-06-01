@@ -6,7 +6,7 @@ date: 2022-10-24
 type: landing
 
 sections:
-  - block: resume-biography-3
+  - block: resume-biography
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
@@ -33,7 +33,15 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: resume-experience
+    id: experience
+    content:
+      username: me
+    design:
+      date_format: 'January 2006'
+      is_education_first: true
   - block: markdown
+    id: mission
     content:
       title: '📚 My Research & Mission'
       subtitle: ''
@@ -59,6 +67,7 @@ sections:
       view: article-grid
       columns: 2
   - block: collection
+    id: publications
     content:
       title: Recent Publications
       text: ''
