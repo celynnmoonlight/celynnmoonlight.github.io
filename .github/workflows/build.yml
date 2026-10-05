@@ -126,6 +126,28 @@ jobs:
       id: pages
       uses: actions/configure-pages@v5
 
+    - name: Resolve Tailwind CLI for Hugo
+      if: hashFiles('package.json') != ''
+      run: |
+        # Hugo requires a Node script; pnpm's shell shim is not reliably parsed.
+        # Run after cache restoration so a cached shim cannot replace this link.
+        node --input-type=module <<'NODE'
+        import { createRequire } from 'node:module';
+        import { readFileSync, mkdirSync, rmSync, symlinkSync, realpathSync } from 'node:fs';
+        import { dirname, resolve, relative } from 'node:path';
+        const require = createRequire(import.meta.url);
+        const manifest = require.resolve('@tailwindcss/cli/package.json');
+        const pkg = JSON.parse(readFileSync(manifest, 'utf8'));
+        const entry = realpathSync(resolve(dirname(manifest), pkg.bin.tailwindcss));
+        const binDir = resolve('node_modules/.bin');
+        mkdirSync(binDir, { recursive: true });
+        const bin = resolve(binDir, 'tailwindcss');
+        rmSync(bin, { force: true });
+        symlinkSync(relative(binDir, entry), bin);
+        console.log(`Tailwind CLI: ${entry}`);
+        NODE
+        node node_modules/.bin/tailwindcss --help
+
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
