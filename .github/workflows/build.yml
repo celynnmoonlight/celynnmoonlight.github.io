@@ -1,7 +1,7 @@
 name: Build
 
 env:
-  NODE_VERSION: '22'
+  NODE_VERSION: '26'
 
 on:
   # Standalone trigger for PR validation
@@ -65,7 +65,7 @@ jobs:
         VERSION=$(yq '.build.hugo_version // ""' hugoblox.yaml 2>/dev/null | grep -v '^null$' || true)
         
         # Fallback to a known stable version if not specified
-        DEFAULT_VERSION="0.161.1"
+        DEFAULT_VERSION="0.167.0"
         VERSION=${VERSION:-$DEFAULT_VERSION}
         
         # Validate version format (basic check)
