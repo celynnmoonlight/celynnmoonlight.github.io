@@ -24,9 +24,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication metadata — structured fields used by citation styles and BibTeX export.
-publication:
-  name: "Proceedings of the HugoBlox Kit Conference"
-  short_name: "ICW"
+publication: "Proceedings of the HugoBlox Kit Conference (ICW)"
 
 peer_reviewed: true
 open_access: true
@@ -108,3 +106,4 @@ slides: ""
 > Create your slides in Markdown - click the _Slides_ button to check out the example.
 
 Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+

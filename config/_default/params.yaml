@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-     description: "Personal homepage of Celynn Moonlight - Co-Founder of Shanghai Sunrise Chime Technology Co., Ltd."
+    description: "Personal homepage of Celynn Moonlight - Co-Founder of Shanghai Sunrise Chime Technology Co., Ltd."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "celynnmoonlight" # Twitter/X handle for Twitter Cards (without @)
@@ -287,3 +287,4 @@ hugoblox:
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
+
